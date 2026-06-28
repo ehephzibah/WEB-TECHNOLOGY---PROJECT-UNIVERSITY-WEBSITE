@@ -1,0 +1,242 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Poppins, sans-serif;
+
+    background: #050816;
+
+    color: white;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+.container {
+
+    width: min(1200px, 90%);
+
+    margin: auto;
+
+}
+
+
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    padding: 22px 0;
+
+    background: rgba(5, 8, 22, .85);
+
+    backdrop-filter: blur(18px);
+
+    z-index: 1000;
+
+}
+
+.nav-wrapper {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+
+    font-size: 1.6rem;
+
+    font-weight: 800;
+
+}
+
+.cta-btn {
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+
+    color: white;
+
+}
+
+
+
+.privacy-hero {
+
+    padding: 180px 0 120px;
+
+    text-align: center;
+
+    position: relative;
+
+    background: linear-gradient(135deg, #071224, #0f172a, #050816);
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: radial-gradient(circle,
+            rgba(37, 99, 235, .2),
+            transparent 70%);
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.section-tag {
+
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, .05);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+}
+
+.hero-content h1 {
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    margin: 25px 0;
+
+}
+
+.hero-content p {
+
+    color: #94a3b8;
+
+    line-height: 1.9;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+
+.privacy-content {
+
+    padding: 120px 0;
+
+}
+
+.policy-card {
+
+    background: rgba(255, 255, 255, .05);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(18px);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    margin-bottom: 35px;
+
+    transition: .35s;
+
+}
+
+.policy-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #2563eb;
+
+}
+
+.policy-card h2 {
+
+    margin-bottom: 18px;
+
+    font-size: 1.8rem;
+
+}
+
+.policy-card p {
+
+    color: #94a3b8;
+
+    line-height: 2;
+
+}
+
+.policy-card a {
+
+    color: #38bdf8;
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+}
+
+
+footer {
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, .08);
+
+    color: #94a3b8;
+
+}
+
+.policy-card ul {
+
+    margin-top: 20px;
+
+    margin-left: 25px;
+
+    color: #94a3b8;
+
+    line-height: 2;
+
+}
+
+.policy-card li {
+
+    margin-bottom: 8px;
+
+}

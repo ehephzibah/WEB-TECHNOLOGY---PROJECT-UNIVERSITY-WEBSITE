@@ -1,0 +1,42 @@
+.primary-btn {
+
+    animation:
+        floatButton 3s ease-in-out infinite;
+}
+
+@keyframes floatButton {
+
+    0% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-8px);
+    }
+
+    100% {
+        transform:
+            translateY(0);
+    }
+
+}
+
+.hero-bg {
+
+    animation: heroZoom 15s ease-in-out infinite alternate;
+
+}
+
+@keyframes heroZoom {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}

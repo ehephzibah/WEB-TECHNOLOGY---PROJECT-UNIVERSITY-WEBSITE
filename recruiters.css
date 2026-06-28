@@ -1,0 +1,102 @@
+.recruiters-section {
+
+    padding: 140px 0;
+
+    background: #071224;
+
+}
+
+.marquee {
+
+    overflow: hidden;
+
+    position: relative;
+
+    margin-top: 60px;
+
+}
+
+.marquee-content {
+
+    display: flex;
+
+    gap: 80px;
+
+    width: max-content;
+
+    animation: scrollLogos 25s linear infinite;
+
+}
+
+.marquee-content img {
+
+    height: 55px;
+
+    opacity: .7;
+
+    filter: grayscale(100%);
+
+    transition: .3s;
+
+}
+
+.marquee-content img:hover {
+
+    opacity: 1;
+
+    filter: none;
+
+    transform: scale(1.1);
+
+}
+
+@keyframes scrollLogos {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+.marquee::before,
+.marquee::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    width: 150px;
+
+    height: 100%;
+
+    z-index: 2;
+
+}
+
+.marquee::before {
+
+    left: 0;
+
+    background:
+        linear-gradient(to right,
+            #071224,
+            transparent);
+
+}
+
+.marquee::after {
+
+    right: 0;
+
+    background:
+        linear-gradient(to left,
+            #071224,
+            transparent);
+
+}

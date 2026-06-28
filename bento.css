@@ -1,0 +1,171 @@
+.bento-section {
+
+    background:
+        linear-gradient(to bottom,
+            #050816,
+            #071224);
+
+    padding: 140px 0;
+}
+
+.section-header {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    margin-bottom: 80px;
+}
+
+.section-tag {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255, 255, 255, .05);
+
+    border:
+        1px solid rgba(255, 255, 255, .1);
+
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+
+    font-size:
+        clamp(2.5rem, 5vw, 4rem);
+
+    margin-bottom: 20px;
+}
+
+.section-header p {
+
+    color: #94a3b8;
+
+    line-height: 1.8;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+@media (max-width: 992px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .large,
+    .wide {
+        grid-column: span 1;
+    }
+}
+
+.large {
+    grid-column: span 2;
+    min-height: 350px;
+}
+
+.wide {
+    grid-column: 1 / -1;
+    min-height: 250px;
+}
+
+.bento-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 40px;
+
+    min-height: 250px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, .04);
+
+    backdrop-filter:
+        blur(30px);
+
+    border:
+        1px solid rgba(255, 255, 255, .08);
+
+    transition: .4s ease;
+}
+
+.bento-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+        rgba(37, 99, 235, .6);
+
+    box-shadow:
+        0 20px 60px rgba(37, 99, 235, .2);
+}
+
+.bento-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(rgba(37, 99, 235, .4),
+            transparent 70%);
+
+    top: -150px;
+    right: -150px;
+
+    transition: .5s;
+}
+
+.bento-card:hover::before {
+
+    transform: scale(1.5);
+}
+
+.card-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.card-content h3 {
+
+    font-size: 1.8rem;
+
+    margin-bottom: 15px;
+}
+
+.card-content p {
+
+    color: #94a3b8;
+
+    line-height: 1.8;
+}
+
+.bento-section {
+    color: white;
+}
+
+.card-content h3 {
+    color: white;
+}

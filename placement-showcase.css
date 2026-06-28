@@ -1,0 +1,186 @@
+.placement-showcase {
+
+    position: relative;
+
+    padding: 180px 0;
+
+    overflow: hidden;
+
+}
+
+.placement-showcase video {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.placement-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(3, 7, 18, .85);
+
+    backdrop-filter:
+        blur(4px);
+
+}
+
+.placement-showcase .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.placement-content {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+.placement-content h2 {
+
+    font-size:
+        clamp(3rem, 5vw, 5rem);
+
+    color: white;
+
+    margin: 25px 0;
+}
+
+.placement-content p {
+
+    color: #94a3b8;
+
+    line-height: 1.8;
+
+    margin-bottom: 80px;
+}
+
+.placement-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+
+}
+
+.placement-card {
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, .05);
+
+    backdrop-filter:
+        blur(20px);
+
+    border:
+        1px solid rgba(255, 255, 255, .08);
+
+    text-align: center;
+
+    transition: .4s;
+}
+
+.placement-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+        rgba(59, 130, 246, .7);
+
+    box-shadow:
+        0 25px 60px rgba(37, 99, 235, .2);
+
+}
+
+.placement-card h3 {
+
+    font-size: 4rem;
+
+    color: #38bdf8;
+
+    margin-bottom: 10px;
+}
+
+.placement-card span {
+
+    color: #cbd5e1;
+
+    font-size: 1rem;
+}
+
+@media(max-width:992px) {
+
+    .placement-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .placement-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+.placement-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(circle at top,
+            rgba(59, 130, 246, .25),
+            transparent 70%);
+
+    opacity: 0;
+
+    transition: .4s;
+
+}
+
+.placement-card:hover::before {
+
+    opacity: 1;
+
+}
+
+.placement-card {
+    position: relative;
+}
