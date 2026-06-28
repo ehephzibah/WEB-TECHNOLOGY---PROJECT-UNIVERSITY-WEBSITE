@@ -11,7 +11,7 @@ A modern, responsive, and premium university website built using **HTML5**, **CS
 Example:
 
 ```
-https://your-website.vercel.app
+https://project-novatech-institute.netlify.app/
 ```
 
 ---
