@@ -6,13 +6,8 @@ A modern, responsive, and premium university website built using **HTML5**, **CS
 
 ##  Live Preview
 
-> Add your deployed website link here (GitHub Pages / Vercel / Netlify)
-
-Example:
-
-```
 https://project-novatech-institute.netlify.app/
-```
+
 
 ---
 
